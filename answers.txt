@@ -1,0 +1,21 @@
+#NAME: PHIONAH NAJJUMA 
+#DATE: 21/04/2026
+
+
+-- CREATE TABLE statement
+CREATE TABLE IF NOT EXISTS products (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    description TEXT,
+    price REAL NOT NULL
+);
+
+-- INSERT statement (using executemany)
+INSERT INTO products (name, description, price) VALUES (?, ?, ?)
+
+-- SELECT * FROM products OUTPUT:
+ID: 1, Name: Cement (bag), Description: Portland cement 50kg bag, Price: UGX 35,000
+ID: 2, Name: Iron Sheet 3m, Description: Gauge 30 roofing sheet 3m long, Price: UGX 110,000
+ID: 3, Name: Paint 5L, Description: Exterior wall paint white 5L, Price: UGX 60,000
+ID: 4, Name: Nails 1kg, Description: Common wire nails 1kg pack, Price: UGX 12,000
+ID: 5, Name: Timber 2x4, Description: Pine timber plank 2x4 per metre, Price: UGX 25,000
